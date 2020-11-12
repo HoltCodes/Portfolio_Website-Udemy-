@@ -13,7 +13,7 @@
 
 .btn-main {
   color: #333;
-  background-color: #ffbc00; }
+  background-color: #aa1010; }
 
 .btn-light {
   color: #333;
@@ -26,7 +26,7 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #ffbc00; }
+  background-color: #aa1010; }
 
 .lead {
   font-size: 1.3rem;
@@ -81,12 +81,12 @@ img {
     padding-bottom: 0.5rem;
     transition: border-color 0.5s; }
     #main-nav a:hover {
-      border-color: #ffbc00; }
+      border-color: #aa1010; }
     #main-nav a:current {
-      border-color: #ffbc00; }
+      border-color: #aa1010; }
 
 #header-home {
-  background: url("/dist/img/background dark.jpg") no-repeat center right/cover;
+  background: url("/dist/img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
