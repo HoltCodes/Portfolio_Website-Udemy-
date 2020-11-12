@@ -99,17 +99,50 @@ img {
 
 // Home Sections
 
+// Home Section A
 #home {
   &-a {
     .specials {
       margin-top: 3rem;
       display: grid;
-      grid-gap: 1rem;
+      grid-gap: 0.25rem;
       grid-template-columns: repeat(4, 1fr);
 
       .fab {
         color: $main-color;
         padding-bottom: 0.4rem;
+      }
+    }
+  }
+
+  // Home Section B
+  &-b {
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      li {
+        line-height: 2;
+
+        &.stats-title {
+          font-size: 1.5rem;
+        }
+
+        &.stats-number {
+          font-size: 2rem;
+          font-weight: bold;
+        }
+      }
+      div {
+        padding: 3rem 0;
+
+        &:nth-child(odd) {
+          background-color: $mix-color;
+        }
+
+        &:nth-child(even) {
+          background-color: $medium-color;
+        }
       }
     }
   }

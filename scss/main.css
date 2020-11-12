@@ -5,7 +5,9 @@
   overflow: hidden;
 }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main,
+.btn-light,
+.btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
   -webkit-transition: all 0.5s;
@@ -87,8 +89,8 @@ img {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 1rem;
 }
 
