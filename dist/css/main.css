@@ -17,7 +17,8 @@
 
 .btn-light {
   color: #333;
-  background-color: #f4f4f4; }
+  background-color: #f4f4f4;
+  font-size: larger; }
 
 .btn-dark {
   color: #f4f4f4;
@@ -82,7 +83,7 @@ img {
     transition: border-color 0.5s; }
     #main-nav a:hover {
       border-color: #aa1010; }
-    #main-nav a:current {
+    #main-nav a.current {
       border-color: #aa1010; }
 
 #header-home {
