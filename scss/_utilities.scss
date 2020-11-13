@@ -18,13 +18,14 @@
   &-main {
     @extend %btn-shared;
     color: #333;
-    background-color: $main-color;
+    background-color: $mix-color;
   }
   &-light {
     @extend %btn-shared;
     color: #333;
     background-color: $light-color;
     font-size: larger;
+    border-radius: 30px;
   }
   &-dark {
     @extend %btn-shared;
@@ -36,7 +37,8 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: $main-color;
+  background-color: $mix-color;
+  border-radius: 10px;
 }
 
 .lead {
@@ -78,4 +80,21 @@ input[class^="btn-"]:hover {
   &-4 {
     margin: 4rem 0;
   }
+}
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: $main-color;
+  display: block;
+  margin: 0 auto 1rem auto;
 }

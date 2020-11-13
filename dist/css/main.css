@@ -13,12 +13,13 @@
 
 .btn-main {
   color: #333;
-  background-color: #aa1010; }
+  background-color: #d14040; }
 
 .btn-light {
   color: #333;
   background-color: #f4f4f4;
-  font-size: larger; }
+  font-size: larger;
+  border-radius: 30px; }
 
 .btn-dark {
   color: #f4f4f4;
@@ -27,7 +28,8 @@
 button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
-  background-color: #aa1010; }
+  background-color: #d14040;
+  border-radius: 10px; }
 
 .lead {
   font-size: 1.3rem;
@@ -59,6 +61,21 @@ input[class^="btn-"]:hover {
 
 .my-4 {
   margin: 4rem 0; }
+
+.section-title {
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase; }
+
+.bottom-line {
+  height: 2px;
+  width: 3rem;
+  background: #aa1010;
+  display: block;
+  margin: 0 auto 1rem auto; }
 
 * {
   margin: 0;
@@ -127,7 +144,7 @@ img {
   grid-gap: 0.25rem;
   grid-template-columns: repeat(4, 1fr); }
   #home-a .specials .fab {
-    color: #aa1010;
+    color: #d14040;
     padding-bottom: 0.4rem; }
 
 #home-b .stats {
@@ -146,3 +163,61 @@ img {
       background-color: #d14040; }
     #home-b .stats div:nth-child(even) {
       background-color: #ccc; }
+
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center; }
+  #home-c .process-step {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 28px;
+    background: #d14040;
+    color: #000;
+    border-radius: 50%;
+    width: 10px;
+    line-height: 10px;
+    padding: 1rem;
+    transition: all 1s; }
+  #home-c .process-icon {
+    border-radius: 50%;
+    background: #333;
+    color: #fff;
+    padding: 2rem;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    position: relative;
+    transition: all 1s; }
+    #home-c .process-icon:hover {
+      background: #d14040;
+      width: 90px;
+      height: 90px;
+      line-height: 90px; }
+      #home-c .process-icon:hover .process-step {
+        background: #333;
+        color: #fff; }
+
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem; }
+  #main-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    align-items: center; }
+    #main-footer .footer-content .social .fab {
+      margin-right: 1rem;
+      border: 2px #fff solid;
+      border-radius: 50%;
+      height: 20px;
+      width: 20px;
+      line-height: 20px;
+      text-align: center;
+      padding: 0.5rem; }
+      #main-footer .footer-content .social .fab:hover {
+        background: #d14040; }
