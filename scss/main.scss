@@ -34,10 +34,11 @@ img {
 
 // Logo
 #logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   color: #fff;
   text-transform: uppercase;
+  margin-top: -2rem;
 }
 
 // Main Nav
@@ -76,7 +77,7 @@ img {
 #header {
   // Header Home
   &-home {
-    background: $bg-image no-repeat center right / cover;
+    background: $bg-image no-repeat center / cover;
     height: 100vh;
     color: #fff;
 
@@ -94,6 +95,9 @@ img {
 
   //   Header Inner
   &-inner {
+    background: $bg-image no-repeat 20% 30% / cover;
+    height: 5.5rem;
+    border-bottom: 3px solid $main-color;
   }
 }
 
@@ -196,6 +200,50 @@ img {
         }
       }
     }
+  }
+}
+
+// About Sections
+
+#about {
+  &-a {
+    .about-info {
+      display: grid;
+      grid-template-areas: "bioimage bio bio";
+      grid-gap: 1.2rem;
+    }
+    // Grid-Area
+    .bio-image {
+      grid-area: bioimage;
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .bio {
+      grid-area: bio;
+      border-left: 3px solid $mix-color;
+      padding: 0.8rem;
+    }
+  }
+}
+
+// Section B
+
+// Section C (Bike Animations)
+.bike {
+  animation-name: drive;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  color: $mix-color;
+}
+@keyframes drive {
+  from {
+    transform: translateX(maxwidth);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 

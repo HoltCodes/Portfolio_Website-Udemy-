@@ -31,6 +31,22 @@ input[class^="btn-"]:hover {
   background-color: #d14040;
   border-radius: 10px; }
 
+.bg-mix {
+  background: #d14040;
+  color: #000; }
+
+.bg-dark {
+  background: #333;
+  color: #fff; }
+
+.bg-light {
+  background: #f4f4f4;
+  color: #000; }
+
+.bg-medium {
+  background: #ccc;
+  color: #000; }
+
 .lead {
   font-size: 1.3rem;
   margin-bottom: 2rem; }
@@ -102,10 +118,11 @@ img {
   width: 100%; }
 
 #logo {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   color: #fff;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-top: -2rem; }
 
 #main-nav {
   display: flex;
@@ -128,7 +145,7 @@ img {
       border-color: #aa1010; }
 
 #header-home {
-  background: url("/dist/img/showcase.jpg") no-repeat center right/cover;
+  background: url("/dist/img/showcase.jpg") no-repeat center/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -137,6 +154,11 @@ img {
     #header-home .header-content h1 {
       font-size: 4rem;
       line-height: 1.2; }
+
+#header-inner {
+  background: url("/dist/img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px solid #aa1010; }
 
 #home-a .specials {
   margin-top: 3rem;
@@ -200,6 +222,35 @@ img {
       #home-c .process-icon:hover .process-step {
         background: #333;
         color: #fff; }
+
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio";
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #d14040;
+  padding: 0.8rem; }
+
+.bike {
+  animation-name: drive;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  color: #d14040; }
+
+@keyframes drive {
+  from {
+    transform: translateX(maxwidth); }
+  to {
+    transform: translateX(100%); } }
 
 #main-footer {
   background: #333;
