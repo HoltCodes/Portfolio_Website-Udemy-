@@ -239,16 +239,16 @@ img {
   border-left: 3px solid #d14040;
   padding: 0.8rem; }
 
-.bike {
-  animation-name: drive;
+.plane {
+  animation-name: fly;
   animation-duration: 5s;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
   color: #d14040; }
 
-@keyframes drive {
+@keyframes fly {
   from {
-    transform: translateX(maxwidth); }
+    transform: translateX(0%); }
   to {
     transform: translateX(100%); } }
 

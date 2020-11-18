@@ -229,18 +229,32 @@ img {
 }
 
 // Section B
+&-b {
+  .testimonials {
+    display: grid;
+    grid-template-columns: (3, 1fr);
+    grid-gap: 0.5rem;
 
-// Section C (Bike Animations)
-.bike {
-  animation-name: drive;
+    ul {
+      list-style: none;
+      margin-top: 1rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+// Section C (Plane Animations)
+.plane {
+  animation-name: fly;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 5;
   color: $mix-color;
 }
-@keyframes drive {
+@keyframes fly {
   from {
-    transform: translateX(maxwidth);
+    transform: translateX(0%);
   }
   to {
     transform: translateX(100%);
