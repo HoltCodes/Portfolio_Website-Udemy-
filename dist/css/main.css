@@ -239,11 +239,30 @@ img {
   border-left: 3px solid #d14040;
   padding: 0.8rem; }
 
-.plane {
+#about-b .testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0.5rem; }
+  #about-b .testimonials ul {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center; }
+  #about-b .testimonials p {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 0.5rem; }
+  #about-b .testimonials img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 0.5rem; }
+
+#about-c {
   animation-name: fly;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 5;
   color: #d14040; }
 
 @keyframes fly {

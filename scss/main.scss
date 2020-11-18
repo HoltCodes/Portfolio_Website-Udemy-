@@ -226,38 +226,50 @@ img {
       padding: 0.8rem;
     }
   }
-}
+  // Section B
+  &-b {
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 0.5rem;
 
-// Section B
-&-b {
-  .testimonials {
-    display: grid;
-    grid-template-columns: (3, 1fr);
-    grid-gap: 0.5rem;
+      ul {
+        list-style: none;
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+      }
 
-    ul {
-      list-style: none;
-      margin-top: 1rem;
-      display: flex;
-      align-items: center;
+      p {
+        border: 1px solid $medium-color;
+        border-radius: 5px;
+        padding: 0.5rem;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
     }
   }
-}
 
-// Section C (Plane Animations)
-.plane {
-  animation-name: fly;
-  animation-duration: 5s;
-  animation-fill-mode: forwards;
-  animation-iteration-count: 5;
-  color: $mix-color;
-}
-@keyframes fly {
-  from {
-    transform: translateX(0%);
+  // Section C (Plane Animations)
+  &-c {
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+    color: $mix-color;
   }
-  to {
-    transform: translateX(100%);
+  @keyframes fly {
+    from {
+      transform: translateX(0%);
+    }
+    to {
+      transform: translateX(100%);
+    }
   }
 }
 
