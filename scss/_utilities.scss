@@ -31,6 +31,7 @@
     @extend %btn-shared;
     color: #f4f4f4;
     background-color: $dark-color;
+    border-radius: 30px;
   }
 }
 
@@ -38,7 +39,7 @@ button[class^="btn-"]:hover,
 a[class^="btn-"]:hover,
 input[class^="btn-"]:hover {
   background-color: $mix-color;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 // Backgrounds
